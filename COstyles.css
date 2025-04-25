@@ -1,0 +1,72 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #4A4A4A;
+}
+
+.header a {
+    color: white;
+}
+
+.header a:hover {
+    color: #a38a63;
+}
+
+.product-card {
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #F9D342;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #e0e0e0;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    color: #a38a63;
+}
+/* Body setup for sticky footer */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Main content should grow to push footer down */
+main {
+    flex: 1;
+}
+
+/* Footer stays at bottom */
+footer {
+    margin-top: auto;
+}

@@ -1,0 +1,134 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7fafc; /* Color de fondo gris claro */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura de la ventana */
+    }
+    
+/* Estilos del encabezado */
+.header {
+    background-color: #4A4A4A; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+}
+
+.header .brand {
+    color: #B3B3B3; /* Color de la marca */
+}
+
+/* Estilos de navegación */
+.header nav a {
+    color: white; /* Color de los enlaces */
+}
+
+.header nav a:hover {
+    color: #D1D5DB; /* Color de los enlaces al pasar el mouse */
+}
+
+/* Estilos del formulario */
+form {
+    background-color: white; /* Color de fondo del formulario */
+    border-radius: 0.375rem; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+}
+
+/* Estilos de los campos de entrada */
+input[type="email"],
+input[type="password"] {
+    border: 1px solid #D1D5DB; /* Borde gris claro */
+    border-radius: 0.375rem; /* Bordes redondeados */
+    padding: 0.5rem; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos del botón */
+button {
+    background-color: #4A4A4A; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    border-radius: 0.375rem; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+}
+
+button:hover {
+    background-color: #3B3B3B; /* Color de fondo del botón al pasar el mouse */
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #4A4A4A; /* Color de fondo del pie de página */
+    color: white; /* Color del texto */
+    margin-top: 3rem; /* Margen superior */
+}
+
+.footer .brand {
+    color: #B3B3B3; /* Color de la marca en el pie de página */
+}
+
+.footer .contact-info {
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilos de la sección de marcas */
+.brand-section {
+    margin-top: 3rem; /* Margen superior */
+}
+
+.brand-section h2 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 1.5rem; /* Margen inferior */
+}
+
+/* Estilos de las imágenes de las marcas */
+.brand-item img {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+    border-radius: 0.375rem; /* Bordes redondeados */
+}
+
+/* Estilos de la sección del héroe */
+.hero-section {
+    position: relative; /* Posicionamiento relativo para el overlay */
+}
+
+.hero-section img {
+    width: 100%; /* Ancho completo */
+    height: 24rem; /* Altura fija */
+    object-fit: cover; /* Ajustar la imagen */
+}
+
+.hero-section .overlay {
+    position: absolute; /* Posicionamiento absoluto para el overlay */
+    inset: 0; /* Cubrir todo el contenedor */
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    color: white; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+}
+/* Body setup for sticky footer */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Main content should grow to push footer down */
+main {
+    flex: 1;
+}
+
+/* Footer stays at bottom */
+footer {
+    margin-top: auto;
+}

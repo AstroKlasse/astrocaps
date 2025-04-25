@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>New Era - Catálogo de Productos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <style>
+        /* Estilos para el corazón */
+        .heart {
+            color: #000000; /* Cambiado a negro */
+            cursor: pointer; /* Cambiar cursor al pasar el mouse */
+            transition: transform 0.3s; /* Transición suave para el hover */
+        }
+        .heart:hover {
+            transform: scale(1.2); /* Aumentar tamaño al pasar el mouse */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="header bg-[#4A4A4A] text-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="text-3xl font-bold">
+                <a href="indeeex.html">
+                    <img class="logo h-12" src="logo0.png" alt="Astro Caps Logo" />
+                </a>
+            </div>
+            <nav class="space-x-6">
+                <a class="hover:text-gray-300 transition duration-300" href="IS.html">Iniciar sesión</a>
+                <a class="hover:text-gray-300 transition duration-300" href="R.html">Registrarse</a>
+                <a class="hover:text-gray-300 transition duration-300" href="C.html">Categorías</a>
+                <a class="hover:text-gray-300 transition duration-300" href="V.html">Video</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <input class="search-input border border-gray-300 rounded-md py-2 px-4" placeholder="Buscar" type="text"/>
+                    <button class="absolute right-2 top-1/2 transform -translate-y-1/2">
+                        <i class="fas fa-search text-gray-500"></i>
+                    </button>
+                </div>
+                <a href="Cora.html" class="icon-button">
+                    <i class="fas fa-heart"></i>
+                </a>
+                <button class="icon-button">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="container mx-auto mt-8">
+        <h2 class="text-2xl font-bold text-center mb-6">Catálogo de Productos - 47 Brand</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Producto 1 -->
+            <div class="product-card bg-white p-4 rounded-lg shadow-md">
+                <img src="47_1.webp" alt="San Francisco 49ers" class="w-full h-48 object-cover rounded-md mb-4"/>
+                <h3 class="text-lg font-bold">San Francisco 49ers</h3>
+                <p class="text-gray-600 mb-2">$999</p>
+                <div class="flex justify-between items-center">
+                    <a href="CO.html">
+                        <button class="bg-[#776e63] text-white font-bold py-2 px-4 rounded">Añadir al Carrito</button>
+                    </a>
+                    <i class="fas fa-heart heart" id="favorite-icon" aria-label="Añadir a Favoritos"></i>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="product-card bg-white p-4 rounded-lg shadow-md">
+                <img src="47_2.jpeg" alt="Boston Red Sox" class="w-full h-48 object-cover rounded-md mb-4"/>
+                <h3 class="text-lg font-bold">Boston Red Sox</h3>
+                <p class="text-gray-600 mb-2">$799</p>
+                <div class="flex justify-between items-center">
+                    <a href="CO.html">
+                        <button class="bg-[#776e63] text-white font-bold py-2 px-4 rounded">Añadir al Carrito</button>
+                    </a>
+                    <i class="fas fa-heart heart" id="favorite-icon" aria-label="Añadir a Favoritos"></i>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="product-card bg-white p-4 rounded-lg shadow-md">
+                <img src="47_3.webp" alt="LA Chargers" class="w-full h-48 object-cover rounded-md mb-4"/>
+                <h3 class="text-lg font-bold">LA Chargers</h3>
+                <p class="text-gray-600 mb-2">$899</p>
+                <div class="flex justify-between items-center">
+                    <a href="CO.html">
+                        <button class="bg-[#776e63] text-white font-bold py-2 px-4 rounded">Añadir al Carrito</button>
+                    </a>
+                    <i class="fas fa-heart heart" id="favorite-icon" aria-label="Añadir a Favoritos"></i>
+                </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="product-card bg-white p-4 rounded-lg shadow-md">
+                <img src="47_4.avif" alt="San Diego Padres" class="w-full h-48 object-cover rounded-md mb-4"/>
+                <h3 class="text-lg font-bold">San Diego Padres</h3>
+                <p class="text-gray-600 mb-2">$999</p>
+                <div class="flex justify-between items-center">
+                    <a href="CO.html">
+                        <button class="bg-[#776e63] text-white font-bold py-2 px-4 rounded">Añadir al Carrito</button>
+                    </a>
+                    <i class="fas fa-heart heart" id="favorite-icon" aria-label="Añadir a Favoritos"></i>
+                </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product-card bg-white p-4 rounded-lg shadow-md">
+                <img src="47_5.jpeg" alt="Oakland Athletics" class="w-full h-48 object-cover rounded-md mb-4"/>
+                <h3 class="text-lg font-bold">Oakland Athletics</h3>
+                <p class="text-gray-600 mb-2">$899</p>
+                <div class="flex justify-between items-center">
+                    <a href="CO.html">
+                        <button class="bg-[#776e63] text-white font-bold py-2 px-4 rounded">Añadir al Carrito</button>
+                    </a>
+                    <i class="fas fa-heart heart" id="favorite-icon" aria-label="Añadir a Favoritos"></i>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="product-card bg-white p-4 rounded-lg shadow-md">
+                <img src="47_6.jpg" alt="Liverpool FC" class="w-full h-48 object-cover rounded-md mb-4"/>
+                <h3 class="text-lg font-bold">Liverpool FC</h3>
+                <p class="text-gray-600 mb-2">$649</p>
+                <div class="flex justify-between items-center">
+                    <a href="CO.html">
+                        <button class="bg-[#776e63] text-white font-bold py-2 px-4 rounded">Añadir al Carrito</button>
+                    </a>
+                    <i class="fas fa-heart heart" id="favorite-icon" aria-label="Añadir a Favoritos"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer bg-[#4A4A4A] text-white mt-12 py-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img class="logo2 h-12" src="logo1.png" alt="Astro Caps Logo" />
+            </div>
+            <div class="flex flex-col md:flex-row md:space-x-8 mb-4 md:mb-0">
+                <div class="about">
+                    <h4 class="font-bold">Acerca de Nosotros</h4>
+                    <p class="text-gray-300">Información sobre la empresa y su misión.</p>
+                </div>
+                <div class="contacto">
+                    <h4 class="font-bold">Contacto</h4>
+                    <p class="text-gray-300">info@astrocaps.com</p>
+                    <p class="text-gray-300">Tel: +52 55 1234 5678</p>
+                </div>
+            </div>
+            <div class="social-links flex space-x-4 mb-4 md:mb-0">
+                <a href="#" aria-label="Instagram">
+                    <img class="social-icons-white-instagram w-8 h-8" src="social-icons-white-instagram0.svg" alt="Instagram"/>
+                </a>
+                <a href="#" aria-label="Dribbble">
+                    <img class="social-icons-white-dribbble w-8 h-8" src="social-icons-white-dribbble0.svg" alt="Dribbble"/>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <img class="social-icons-white-twitter w-8 h-8" src="social-icons-white-twitter0.svg" alt="Twitter"/>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <img class="social-icons-white-youtube w-8 h-8" src="social-icons-white-youtube0.svg" alt="YouTube"/>
+                </a>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="astro-caps-2025">© Astro Caps 2025</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('favorite-icon').addEventListener('click', function() {
+            this.classList.toggle('active'); // Cambia el estado activo
+            window.location.href = 'Cora.html'; // Redirige a Cora.html
+        });
+    </script>
+</body>
+</html>
